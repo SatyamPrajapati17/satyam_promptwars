@@ -298,3 +298,4 @@ ${revisitUrl}
 
   return { subject, text, html };
 }
+

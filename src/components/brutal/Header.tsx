@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Menu, X, Settings, BarChart2, LogOut, Wrench, Presentation } from "lucide-react";
+import { Menu, X, Settings, BarChart2, LogOut } from "lucide-react";
 import { Logo } from "./Logo";
 import { Button } from "./Button";
 import { createClient } from "@/lib/supabase/client";
@@ -39,20 +39,6 @@ export function Header({ user }: HeaderProps) {
             className="text-sm font-bold uppercase tracking-wider text-black hover:text-[#E10600] transition-colors"
           >
             About
-          </Link>
-          <Link
-            href="/ppt"
-            className="text-sm font-bold uppercase tracking-wider text-black hover:text-[#E10600] flex items-center gap-1.5 transition-colors"
-          >
-            <Presentation className="w-4 h-4 text-[#E10600]" />
-            PPT Deck
-          </Link>
-          <Link
-            href="/setup"
-            className="text-sm font-bold uppercase tracking-wider text-black hover:text-[#E10600] flex items-center gap-1.5 transition-colors"
-          >
-            <Wrench className="w-4 h-4" />
-            Setup
           </Link>
 
           {user ? (
@@ -96,14 +82,6 @@ export function Header({ user }: HeaderProps) {
                     >
                       <Settings className="w-4 h-4" />
                       Settings
-                    </Link>
-                    <Link
-                      href="/setup"
-                      onClick={() => setUserMenuOpen(false)}
-                      className="px-4 py-2 text-xs font-bold uppercase hover:bg-[#FFE600] flex items-center gap-2"
-                    >
-                      <Wrench className="w-4 h-4" />
-                      Setup / Health
                     </Link>
                     <button
                       onClick={handleSignOut}
@@ -162,20 +140,6 @@ export function Header({ user }: HeaderProps) {
           >
             About
           </Link>
-          <Link
-            href="/ppt"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block py-2 font-bold uppercase text-sm border-b border-gray-200 text-[#E10600]"
-          >
-            Presentation (PPT)
-          </Link>
-          <Link
-            href="/setup"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block py-2 font-bold uppercase text-sm border-b border-gray-200"
-          >
-            Setup / Health
-          </Link>
 
           {user ? (
             <div className="pt-2 space-y-2">
@@ -232,3 +196,4 @@ export function Header({ user }: HeaderProps) {
     </header>
   );
 }
+

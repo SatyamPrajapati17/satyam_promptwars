@@ -73,3 +73,4 @@ export function Drawer({ isOpen, onClose, title, children }: DrawerProps) {
     </AnimatePresence>
   );
 }
+

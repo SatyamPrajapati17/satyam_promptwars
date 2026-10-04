@@ -14,3 +14,4 @@ describe("Environment Configuration", () => {
     expect(typeof isConfigured("gmail")).toBe("boolean");
   });
 });
+

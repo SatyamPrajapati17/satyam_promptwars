@@ -44,3 +44,7 @@ next-env.d.ts
 /docs/
 AGENTS.md
 CLAUDE.md
+imp.md
+imp*
+data/
+

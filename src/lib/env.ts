@@ -15,7 +15,7 @@ const serverEnvSchema = z.object({
   SUPABASE_SECRET_KEY: z.string().optional().default(""),
   NVIDIA_API_KEY: z.string().optional().default(""),
   NVIDIA_BASE_URL: z.string().default("https://integrate.api.nvidia.com/v1"),
-  NVIDIA_MODEL: z.string().default("meta/llama-3.3-70b-instruct"),
+  NVIDIA_MODEL: z.string().default("openai/gpt-oss-20b"),
   GMAIL_USER: z.string().optional().default(""),
   GMAIL_APP_PASSWORD: z.string().optional().default(""),
   MAIL_FROM_NAME: z.string().default("The Unbias"),
@@ -89,3 +89,4 @@ export function isConfigured(service: "supabase" | "ai" | "sheets" | "gmail") {
       return Boolean(serverEnv.GMAIL_USER && serverEnv.GMAIL_APP_PASSWORD);
   }
 }
+

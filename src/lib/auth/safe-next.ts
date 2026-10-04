@@ -5,3 +5,4 @@ export function safeNext(target: string | null | undefined, fallback = "/dashboa
   }
   return fallback;
 }
+

@@ -24,18 +24,6 @@ export function Footer() {
           <Link href="/terms" className="hover:text-[#E10600] transition-colors">
             Terms of Service
           </Link>
-          <Link
-            href="/setup"
-            className="hover:text-[#E10600] transition-colors"
-          >
-            System Setup
-          </Link>
-          <Link
-            href="/ppt"
-            className="hover:text-[#E10600] transition-colors font-mono font-bold text-[#E10600]"
-          >
-            Presentation (PPT)
-          </Link>
           <a
             href="mailto:support@theunbias.com"
             className="hover:text-[#E10600] transition-colors"
@@ -56,3 +44,4 @@ export function Footer() {
     </footer>
   );
 }
+
