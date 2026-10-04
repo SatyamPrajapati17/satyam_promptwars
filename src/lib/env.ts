@@ -43,7 +43,7 @@ const rawServer = {
   NVIDIA_API_KEY: process.env.NVIDIA_API_KEY,
   NVIDIA_BASE_URL:
     process.env.NVIDIA_BASE_URL || "https://integrate.api.nvidia.com/v1",
-  NVIDIA_MODEL: process.env.NVIDIA_MODEL || "meta/llama-3.3-70b-instruct",
+  NVIDIA_MODEL: process.env.NVIDIA_MODEL || "openai/gpt-oss-20b",
   GMAIL_USER: process.env.GMAIL_USER,
   GMAIL_APP_PASSWORD: process.env.GMAIL_APP_PASSWORD,
   MAIL_FROM_NAME: process.env.MAIL_FROM_NAME || "The Unbias",
